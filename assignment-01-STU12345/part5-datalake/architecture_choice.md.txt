@@ -1,0 +1,9 @@
+## Architecture Recommendation
+
+For a fast-growing food delivery startup handling diverse data types such as GPS logs, customer reviews, transactions, and images, a Data Lakehouse architecture would be the best choice. A Data Lakehouse combines the flexibility of a data lake with the structured capabilities of a data warehouse, making it suitable for handling both structured and unstructured data.
+
+First, the system deals with multiple data formats, including text, images, and real-time GPS data. A Data Lakehouse can store all these formats in a unified storage system without requiring strict schema definitions upfront. This flexibility allows the company to scale and adapt as new data types are introduced.
+
+Second, the startup requires both analytical processing and reporting. A Data Lakehouse supports efficient querying and analytics, enabling business intelligence and reporting similar to a data warehouse while still maintaining raw data storage.
+
+Finally, a Data Lakehouse supports real-time and batch processing, which is essential for applications like delivery tracking and customer feedback analysis. This makes it a scalable and future-ready solution for the startup’s growing data needs.
