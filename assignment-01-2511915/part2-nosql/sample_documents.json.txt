@@ -1,0 +1,38 @@
+[
+  {
+    "product_id": "E101",
+    "category": "Electronics",
+    "product_name": "Smartphone",
+    "price": 25000,
+    "brand": "Samsung",
+    "specs": {
+      "warranty_years": 2,
+      "battery": "5000mAh",
+      "storage": "128GB"
+    },
+    "ratings": [4, 5, 5, 3]
+  },
+  {
+    "product_id": "C201",
+    "category": "Clothing",
+    "product_name": "Men's Jacket",
+    "price": 3000,
+    "brand": "Zara",
+    "sizes_available": ["S", "M", "L", "XL"],
+    "material": "Leather",
+    "colors": ["Black", "Brown"]
+  },
+  {
+    "product_id": "G301",
+    "category": "Groceries",
+    "product_name": "Organic Milk",
+    "price": 80,
+    "brand": "Amul",
+    "expiry_date": "2024-12-31",
+    "nutrition": {
+      "calories": 150,
+      "protein": "8g",
+      "fat": "5g"
+    }
+  }
+]

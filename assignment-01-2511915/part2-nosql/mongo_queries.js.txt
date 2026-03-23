@@ -1,0 +1,47 @@
+// OP1: insertMany() — insert all 3 documents
+db.products.insertMany([
+  {
+    product_id: "E101",
+    category: "Electronics",
+    product_name: "Smartphone",
+    price: 25000,
+    specs: { warranty_years: 2, battery: "5000mAh" }
+  },
+  {
+    product_id: "C201",
+    category: "Clothing",
+    product_name: "Men's Jacket",
+    price: 3000,
+    sizes_available: ["S", "M", "L"]
+  },
+  {
+    product_id: "G301",
+    category: "Groceries",
+    product_name: "Organic Milk",
+    price: 80,
+    expiry_date: new Date("2024-12-31")
+  }
+]);
+
+// OP2: find Electronics with price > 20000
+db.products.find({
+  category: "Electronics",
+  price: { $gt: 20000 }
+});
+
+// OP3: Groceries expiring before 2025-01-01
+db.products.find({
+  category: "Groceries",
+  expiry_date: { $lt: new Date("2025-01-01") }
+});
+
+// OP4: updateOne() — add discount_percent
+db.products.updateOne(
+  { product_id: "E101" },
+  { $set: { discount_percent: 10 } }
+);
+
+// OP5: createIndex() on category
+db.products.createIndex({ category: 1 });
+
+// This index improves query performance when filtering by category
